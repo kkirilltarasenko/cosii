@@ -51,7 +51,7 @@ def main():
     print("Создание фильтров...")
     
     # 1. Однородный фильтр (простое усиление/ослабление)
-    homogeneous_filter = HomogeneousFilter(gain=0.5)
+    homogeneous_filter = HomogeneousFilter(window_size=9)
     
     # 2. ВЧ-фильтр с окном Блэкмана (FIR)
     cutoff_freq = 1000  # Частота среза 1 кГц
